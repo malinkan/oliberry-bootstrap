@@ -42,11 +42,15 @@ var paths = {
 /* Tasks */
 gulp.task('styles', function() {
     return sass('assets/sass/main.scss',{ style: 'expanded' })
-        .pipe(gulp.dest('styles'))
-        .pipe(rename({suffix: '.min'}))
-        .pipe(minifycss())
+        //.pipe(gulp.dest('styles'))
+        //.pipe(rename({suffix: '.min'}))
+        //.pipe(minifycss())
         .pipe(gulp.dest('styles'))
         .pipe(notify({ message: 'Styles task complete' }));
+});
+
+gulp.task('watch', function(){
+  gulp.watch('./assets/sass/**/*.scss', ['styles']);
 });
 
 gulp.task('scripts', function() {
@@ -75,9 +79,9 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('clean', function(cb) {
-    del([paths.stylesOutput, paths.scriptsOutput, paths.imagesOutput, paths.fontsOutput], cb)
+    del([paths.stylesOutput, paths.scriptsOutput, /*paths.imagesOutput,*/ paths.fontsOutput], cb)
 });
 
-gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', /*'images'*/, 'fonts');
+gulp.task('default', ['clean', 'watch'], function() {
+    gulp.start('styles', 'scripts', /*'images',*/ 'fonts');
 });
