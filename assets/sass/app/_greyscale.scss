@@ -7,8 +7,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: $grayscale-body-font-family;
-  color: $grayscale-light;
-  background-color: $grayscale-dark;
+  color: $grayscale-dark-secondary;
+  background-color: $grayscale-light;
   -webkit-tap-highlight-color: transparentize($grayscale-light, 0.8);
 }
 
@@ -21,7 +21,9 @@ h6, .h6 {
   margin: 0 0 35px;
   font-family: $grayscale-headline-font-family;
   font-weight: 400;
+  font-size: $header-size;
   letter-spacing: 0px;
+  color: $grayscale-dark; 
 }
 
 p {
@@ -29,12 +31,34 @@ p {
   font-size: 18px;
   line-height: 1.5;
 }
+.content-section {
+   a {
+    color: $grayscale-links-color;
+      &:hover,
+      &:focus {
+        color: darken($grayscale-links-color, 10);
+      }
+  }
 
+  .btn-default {
+    border: 1px solid $grayscale-links-color;
+    &:hover,
+    &:focus {
+       border: 1px solid $grayscale-links-color;
+       background-color: $grayscale-links-color;
+       color: $grayscale-light;
+    }
+  }
+
+}
+.heading-light {
+  color: $grayscale-light; 
+}
 @media(min-width:$screen-xs-max) {
 
   p {
     margin: 0 0 35px;
-    font-size: 20px;
+    font-size: $paragraph-size;
     line-height: 1.6;
   }
 
@@ -147,13 +171,15 @@ a {
   background-size: cover;
   -o-background-size: cover;
 
+  background-attachment: fixed;
+
   .intro-body {
     display: table-cell;
     vertical-align: middle;
 
     .brand-heading {
       font-size: 70px;  
-      letter-spacing: -3px;    
+      letter-spacing: -3px;  
     }
 
     .intro-text {
@@ -216,6 +242,7 @@ a {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+   background-attachment: fixed;
 }
 
 #map {
