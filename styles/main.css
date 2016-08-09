@@ -14331,8 +14331,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
-  background-color: #333;
+  color: #989898;
+  background-color: #fff;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -14345,7 +14345,9 @@ h6, .h6 {
   margin: 0 0 35px;
   font-family: "Playfair Display", serif;
   font-weight: 400;
+  font-size: 60px;
   letter-spacing: 0px;
+  color: #333;
 }
 
 p {
@@ -14354,10 +14356,29 @@ p {
   line-height: 1.5;
 }
 
+.content-section a {
+  color: #1fa587;
+}
+.content-section a:hover, .content-section a:focus {
+  color: #177a64;
+}
+.content-section .btn-default {
+  border: 1px solid #1fa587;
+}
+.content-section .btn-default:hover, .content-section .btn-default:focus {
+  border: 1px solid #1fa587;
+  background-color: #1fa587;
+  color: #fff;
+}
+
+.heading-light {
+  color: #fff;
+}
+
 @media (min-width: 767px) {
   p {
     margin: 0 0 35px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.6;
   }
 }
@@ -14446,6 +14467,7 @@ a:hover, a:focus {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  background-attachment: fixed;
 }
 .intro .intro-body {
   display: table-cell;
@@ -14495,6 +14517,64 @@ a:hover, a:focus {
   padding-top: 100px;
 }
 
+.content-section-about {
+  padding-top: 0px;
+}
+.content-section-about h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.content-section-about h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.content-section-about section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.content-section-about article {
+  padding: 10px 0;
+}
+.content-section-about p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.content-section-about .left-col, .content-section-about .right-col {
+  padding-top: 100px;
+}
+.content-section-about .left-col {
+  background-color: #E0DCDB;
+}
+.content-section-about .left-col section {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.content-section-about .left-col p {
+  font-style: italic;
+}
+.content-section-about .profile-section h1 {
+  margin-bottom: 10px;
+}
+.content-section-about .profile-section .profile-picture {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 35px;
+}
+.content-section-about .right-col {
+  text-align: left;
+}
+.content-section-about .right-col section {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.content-section-about .right-col h1 {
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+.content-section-about .right-col h2 {
+  margin-bottom: 10px;
+}
+
 .download-section {
   width: 100%;
   padding: 50px 0;
@@ -14504,6 +14584,7 @@ a:hover, a:focus {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  background-attachment: fixed;
 }
 
 #map {
@@ -14515,6 +14596,10 @@ a:hover, a:focus {
 @media (min-width: 767px) {
   .content-section {
     padding-top: 250px;
+  }
+
+  .content-section-about {
+    padding-top: 0px;
   }
 
   .download-section {
@@ -14615,4 +14700,177 @@ img::selection {
 }
 img::-moz-selection {
   background: transparent;
+}
+
+/*gallery*/
+.gallery-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  padding: 50px 0;
+}
+
+#gallery-portfoliolist-filters {
+  margin: 1%;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery-portfoliolist-filters li {
+  float: left;
+}
+
+#gallery-portfoliolist-filters li span {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+}
+
+#gallery-portfoliolist-filters li span.active {
+  background: #6a3d44;
+  color: #fff;
+}
+
+#portfoliolist .portfolio {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  width: 23%;
+  margin: 1%;
+  display: none;
+  float: left;
+  overflow: hidden;
+}
+
+.portfolio-wrapper {
+  overflow: hidden;
+  position: relative !important;
+  background: #666;
+  cursor: pointer;
+}
+
+.portfolio img {
+  max-width: 100%;
+  position: relative;
+  top: 0;
+  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio .label {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0px;
+  bottom: -40px;
+  -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio .label-bg {
+  background: #6a3d44;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.portfolio .label-text {
+  color: #fff;
+  position: relative;
+  z-index: 500;
+  padding: 10px 8px;
+}
+
+.portfolio .text-category {
+  display: block;
+  font-size: 9px;
+  color: #fff;
+}
+
+.portfolio:hover .label {
+  bottom: 0;
+}
+
+.portfolio:hover img {
+  top: -30px;
+}
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .gallery-container {
+    width: 768px;
+  }
+}
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  .gallery-container {
+    width: 95%;
+  }
+
+  #portfoliolist .portfolio {
+    width: 48%;
+    margin: 1%;
+  }
+
+  #ads {
+    display: none;
+  }
+}
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .gallery-container {
+    width: 70%;
+  }
+
+  #ads {
+    display: none;
+  }
+}
+/* #Clearing */
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+
+.row,
+.clearfix {
+  zoom: 1;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }

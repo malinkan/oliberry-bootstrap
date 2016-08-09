@@ -23,6 +23,31 @@ $(function() {
         event.preventDefault();
     });
 });
+// Gallery Plugin Mixitup
+$(function () {
+        
+        var filterList = {
+        
+            init: function () {
+            
+                // MixItUp plugin
+                // http://mixitup.io
+                $('#portfoliolist').mixItUp({
+                selectors: {
+                  target: '.portfolio',
+                  filter: '.filter' 
+              } 
+                });                             
+            
+            }
+
+        };
+        
+        // Run the show!
+        filterList.init();
+        
+        
+    }); 
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
@@ -176,3 +201,32 @@ function init() {
         icon: image
     });
 }
+
+
+$(function () {
+        
+        var filterList = {
+        
+            init: function () {
+            
+                // MixItUp plugin
+                // http://mixitup.io
+                $('#portfoliolist').mixItUp({
+                selectors: {
+                  target: '.portfolio',
+                  filter: '.filter' 
+              },
+              load: {
+              //filter: '.app'  
+            }     
+                });                             
+            
+            }
+
+        };
+        
+        // Run the show!
+        filterList.init();
+        
+        
+    }); 

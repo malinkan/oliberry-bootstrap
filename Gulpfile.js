@@ -23,7 +23,8 @@ var paths = {
     scripts: [
         'assets/bower_components/jquery/dist/jquery.js',
         'assets/bower_components/jquery.easing/js/jquery.easing.js',
-        'assets/bower_components/bootstrap/dist/js/bootstrap.js',
+        'assets/bower_components/bootstrap/dist/js/bootstrap.js',,
+        'assets/js/jquery.mixitup.min.js',
         'assets/js/grayscale.js'
     ],
     images: ['assets/images/**/*'],
