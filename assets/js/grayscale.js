@@ -52,7 +52,7 @@ $(function () {
         };
         
         filterListFlowers.init();
-        $('#portfoliolist .all').addClass('active');
+        $('#gallery-portfoliolist-filters .all').addClass('active');
     }); 
 
 // Closes the Responsive Menu on Menu Item Click

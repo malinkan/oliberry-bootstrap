@@ -14743,7 +14743,7 @@ img::-moz-selection {
 }
 
 #gallery-portfoliolist-filters li span.active {
-  background: #bd6e7b;
+  background: #1fa587;
   color: #fff;
 }
 
@@ -14784,7 +14784,7 @@ img::-moz-selection {
 }
 
 .portfolio .label-bg {
-  background: #bd6e7b;
+  background: #1fa587;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -14955,3 +14955,4 @@ img::-moz-selection {
     width: 100%;
   }
 }
+/*lightbox*/
