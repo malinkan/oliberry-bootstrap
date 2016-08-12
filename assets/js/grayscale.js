@@ -23,10 +23,12 @@ $(function() {
         event.preventDefault();
     });
 });
+
+
 // Gallery Plugin Mixitup
 $(function () {
         
-        var filterList = {
+        var filterListFlowers = {
         
             init: function () {
             
@@ -36,17 +38,18 @@ $(function () {
                 selectors: {
                   target: '.portfolio',
                   filter: '.filter' 
-              } 
-                });                             
+                },
+                load: {
+                    filter: 'all'  
+                }     
+             });                             
             
             }
 
         };
         
-        // Run the show!
-        filterList.init();
-        
-        
+        filterListFlowers.init();
+        $('#portfoliolist .all').addClass('active');
     }); 
 
 // Closes the Responsive Menu on Menu Item Click

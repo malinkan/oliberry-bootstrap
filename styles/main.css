@@ -14543,7 +14543,7 @@ a:hover, a:focus {
   padding-top: 100px;
 }
 .content-section-about .left-col {
-  background-color: #E0DCDB;
+  background-color: #f1eee9;
 }
 .content-section-about .left-col section {
   padding-left: 30px;
@@ -14575,11 +14575,11 @@ a:hover, a:focus {
   margin-bottom: 10px;
 }
 
-.download-section {
+.portfolioweddings-section {
   width: 100%;
-  padding: 50px 0;
+  padding: 0;
   color: #fff;
-  background: #333 url(../images/downloads-bg.jpg) no-repeat scroll center center;
+  background: #333 url(../images/quote.jpg) no-repeat scroll center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -14595,15 +14595,19 @@ a:hover, a:focus {
 
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px;
+    padding-top: 150px;
+  }
+
+  #about {
+    padding: 0;
   }
 
   .content-section-about {
     padding-top: 0px;
   }
 
-  .download-section {
-    padding: 100px 0;
+  .portfolioweddings-section {
+    padding: 150px 0;
   }
 
   #map {
@@ -14728,12 +14732,11 @@ img::-moz-selection {
   display: block;
   padding: 5px 20px;
   text-decoration: none;
-  color: #666;
   cursor: pointer;
 }
 
 #gallery-portfoliolist-filters li span.active {
-  background: #6a3d44;
+  background: #bd6e7b;
   color: #fff;
 }
 
@@ -14774,7 +14777,7 @@ img::-moz-selection {
 }
 
 .portfolio .label-bg {
-  background: #6a3d44;
+  background: #bd6e7b;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -14783,16 +14786,26 @@ img::-moz-selection {
 }
 
 .portfolio .label-text {
-  color: #fff;
   position: relative;
   z-index: 500;
-  padding: 10px 8px;
+  padding: 5px 8px;
+}
+
+.portfolio .text-category, .portfolio .text-title {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.portfolio .text-title {
+  text-transform: uppercase;
 }
 
 .portfolio .text-category {
-  display: block;
-  font-size: 9px;
-  color: #fff;
+  font-style: italic;
+  text-transform: lowercase;
 }
 
 .portfolio:hover .label {
@@ -14836,7 +14849,7 @@ img::-moz-selection {
 }
 /* #Clearing */
 /* Self Clearing Goodness */
-.container:after {
+.gallery-container:after {
   content: "\0020";
   display: block;
   height: 0;
