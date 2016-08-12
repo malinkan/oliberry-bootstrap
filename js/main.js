@@ -12370,6 +12370,7 @@ if ( typeof define === 'function' && define.amd ) {
 // jQuery to collapse the navbar on scroll
 
 if ($(".navbar-sticky").length) {
+
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
             $(".navbar-fixed-top").addClass("top-nav-collapse");
