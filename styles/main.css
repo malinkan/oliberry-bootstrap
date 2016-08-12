@@ -14356,16 +14356,16 @@ p {
   line-height: 1.5;
 }
 
-.content-section a {
+.content-section a, footer a {
   color: #1fa587;
 }
-.content-section a:hover, .content-section a:focus {
+.content-section a:hover, .content-section a:focus, footer a:hover, footer a:focus {
   color: #177a64;
 }
-.content-section .btn-default {
+.content-section .btn-default, footer .btn-default {
   border: 1px solid #1fa587;
 }
-.content-section .btn-default:hover, .content-section .btn-default:focus {
+.content-section .btn-default:hover, .content-section .btn-default:focus, footer .btn-default:hover, footer .btn-default:focus {
   border: 1px solid #1fa587;
   background-color: #1fa587;
   color: #fff;
@@ -14514,7 +14514,11 @@ a:hover, a:focus {
 }
 
 .content-section {
-  padding-top: 100px;
+  padding: 50px 0 100px 0;
+}
+
+.content-section-resume {
+  padding: 0;
 }
 
 .content-section-pageheader {
@@ -14579,9 +14583,9 @@ a:hover, a:focus {
   margin-bottom: 10px;
 }
 
-.portfolioweddings-section {
+.section-with-background {
   width: 100%;
-  padding: 0;
+  padding: 50px 0;
   color: #fff;
   background: #333 url(../images/quote.jpg) no-repeat scroll center center;
   -webkit-background-size: cover;
@@ -14589,6 +14593,51 @@ a:hover, a:focus {
   background-size: cover;
   -o-background-size: cover;
   background-attachment: fixed;
+}
+.section-with-background h1, .section-with-background h2, .section-with-background a {
+  color: #fff;
+}
+.section-with-background .btn-default {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #fff;
+}
+.section-with-background .btn-default:focus, .section-with-background .btn-default.focus {
+  color: #fff;
+  background-color: rgba(230, 230, 230, 0);
+  border-color: #bfbfbf;
+}
+.section-with-background .btn-default:hover {
+  color: #fff;
+  background-color: rgba(230, 230, 230, 0);
+  border-color: #e0e0e0;
+}
+.section-with-background .btn-default:active, .section-with-background .btn-default.active, .open > .section-with-background .btn-default.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(230, 230, 230, 0);
+  border-color: #e0e0e0;
+}
+.section-with-background .btn-default:active:hover, .section-with-background .btn-default:active:focus, .section-with-background .btn-default:active.focus, .section-with-background .btn-default.active:hover, .section-with-background .btn-default.active:focus, .section-with-background .btn-default.active.focus, .open > .section-with-background .btn-default.dropdown-toggle:hover, .open > .section-with-background .btn-default.dropdown-toggle:focus, .open > .section-with-background .btn-default.dropdown-toggle.focus {
+  color: #fff;
+  background-color: rgba(212, 212, 212, 0);
+  border-color: #bfbfbf;
+}
+.section-with-background .btn-default:active, .section-with-background .btn-default.active, .open > .section-with-background .btn-default.dropdown-toggle {
+  background-image: none;
+}
+.section-with-background .btn-default.disabled:hover, .section-with-background .btn-default.disabled:focus, .section-with-background .btn-default.disabled.focus, .section-with-background .btn-default[disabled]:hover, .section-with-background .btn-default[disabled]:focus, .section-with-background .btn-default[disabled].focus, fieldset[disabled] .section-with-background .btn-default:hover, fieldset[disabled] .section-with-background .btn-default:focus, fieldset[disabled] .section-with-background .btn-default.focus {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #fff;
+}
+.section-with-background .btn-default .badge {
+  color: rgba(255, 255, 255, 0);
+  background-color: #fff;
+}
+.section-with-background .btn-default:hover, .section-with-background .btn-default:focus {
+  border: 1px solid #fff;
+  outline: none;
+  color: #333;
+  background-color: #fff;
 }
 
 #map {
@@ -14599,7 +14648,11 @@ a:hover, a:focus {
 
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 150px;
+    padding: 50px 0 100px 0;
+  }
+
+  .content-section-resume {
+    padding: 0;
   }
 
   .content-section-pageheader {
@@ -14695,10 +14748,13 @@ ul.banner-social-buttons {
   }
 }
 footer {
+  margin-top: 100px;
   padding: 50px 0;
+  background-color: #333;
 }
 footer p {
   margin: 0;
+  color: #fff;
 }
 
 ::-moz-selection, ::selection {

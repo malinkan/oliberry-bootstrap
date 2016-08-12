@@ -32,7 +32,7 @@ p {
     line-height: 1.5;
 }
 
-.content-section {
+.content-section, footer {
     a {
         color: $grayscale-links-color;
 
@@ -226,7 +226,11 @@ a {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding: 50px 0 100px 0;
+}
+
+.content-section-resume {
+    padding: 0;
 }
 
 .content-section-pageheader {
@@ -308,9 +312,9 @@ a {
     }
 }
 
-.portfolioweddings-section {
+.section-with-background  {
     width: 100%;
-    padding: 0;
+    padding: 50px 0;
     color: $grayscale-light;
     background: $grayscale-dark url(../images/quote.jpg) no-repeat scroll center center;
     -webkit-background-size: cover;
@@ -318,6 +322,21 @@ a {
     background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
+    h1, h2, a {
+        color: $grayscale-light;
+    }
+
+    .btn-default {
+    @include button-variant($grayscale-light, transparentize(white, 1), $grayscale-light);
+
+    &:hover,
+    &:focus {
+        border: 1px solid $grayscale-light;
+        outline: none;
+        color: $grayscale-dark;
+        background-color: $grayscale-light;
+    }
+}
 }
 
 #map {
@@ -328,7 +347,11 @@ a {
 
 @media (min-width: $screen-xs-max) {
     .content-section {
-        padding-top: 150px;
+        padding: 50px 0 100px 0;
+    }
+
+    .content-section-resume {
+        padding: 0;
     }
 
     .content-section-pageheader {
@@ -399,10 +422,12 @@ ul.banner-social-buttons {
 }
 
 footer {
+    margin-top: 100px;
     padding: 50px 0;
-
+    background-color: $grayscale-dark;
     p {
         margin: 0;
+        color: $grayscale-light;
     }
 }
 
