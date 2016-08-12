@@ -1,0 +1,17 @@
+RewriteEngine on
+RewriteBase /oliberry-floral-resume/
+
+RewriteCond %{REQUEST_URI} !^/oliberry-floral-resume/
+RewriteCond %{REQUEST_URI} ^/
+RewriteRule ^.*$ /oliberry-floral-resume/$0 [L]
+
+
+
+RewriteCond    %{REQUEST_FILENAME}  -d
+RewriteRule    ^(.+[^/])$           $1/  [R]
+
+
+
+
+
+

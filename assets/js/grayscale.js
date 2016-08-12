@@ -5,13 +5,16 @@
  */
 
 // jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
+
+if ($(".navbar-sticky").length) {
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    });
+}
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -204,32 +207,3 @@ function init() {
         icon: image
     });
 }
-
-
-$(function () {
-        
-        var filterList = {
-        
-            init: function () {
-            
-                // MixItUp plugin
-                // http://mixitup.io
-                $('#portfoliolist').mixItUp({
-                selectors: {
-                  target: '.portfolio',
-                  filter: '.filter' 
-              },
-              load: {
-              //filter: '.app'  
-            }     
-                });                             
-            
-            }
-
-        };
-        
-        // Run the show!
-        filterList.init();
-        
-        
-    }); 
