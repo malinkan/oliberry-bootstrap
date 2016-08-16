@@ -43,7 +43,7 @@ $(function () {
                   filter: '.filter' 
                 },
                 load: {
-                    filter: 'all'  
+                    filter: 'bouquets'  
                 }     
              });                             
             
@@ -52,7 +52,7 @@ $(function () {
         };
         
         filterListFlowers.init();
-        $('#gallery-portfoliolist-filters .all').addClass('active');
+        $('#gallery-portfoliolist-filters .bouquets').addClass('active');
     }); 
 
 // Closes the Responsive Menu on Menu Item Click
