@@ -12390,35 +12390,6 @@ $(function() {
     });
 });
 
-
-// Gallery Plugin Mixitup
-$(function () {
-        
-        var filterListFlowers = {
-        
-            init: function () {
-            
-                // MixItUp plugin
-                // http://mixitup.io
-                $('#portfoliolist').mixItUp({
-                selectors: {
-                  target: '.portfolio',
-                  filter: '.filter' 
-                },
-                load: {
-                    filter: 'bouquets'  
-                }     
-             });                             
-            
-            }
-
-        };
-        
-        filterListFlowers.init();
-         $('#gallery-portfoliolist-filters .bouquets').addClass('active');
-        $('#portfoliolist .bouquets').show();
-    }); 
-
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
@@ -12436,7 +12407,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(43.6532, -79.3832), // Toronto
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -12564,7 +12535,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'images/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var myLatLng = new google.maps.LatLng(43.6532, -79.3832);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,

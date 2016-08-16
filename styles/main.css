@@ -14514,77 +14514,66 @@ a:hover, a:focus {
 }
 
 .content-section {
-  padding: 50px 0 100px 0;
+  padding: 50px 0;
 }
 
-.content-section-resume {
-  padding: 0;
+.content-section-no-padding {
+  padding: 0px;
 }
 
-.content-section-pageheader {
-  padding-top: 100px;
-}
-
-.content-section-about {
-  padding-top: 0px;
-}
-.content-section-about h1 {
+#resume h1 {
   font-size: 20px;
   text-transform: uppercase;
 }
-.content-section-about h2 {
+#resume h2 {
   font-size: 16px;
   text-transform: uppercase;
 }
-.content-section-about section {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.content-section-about article {
+#resume article {
   padding: 10px 0;
 }
-.content-section-about p {
+#resume p {
   margin-bottom: 10px;
   font-size: 14px;
 }
-.content-section-about .left-col, .content-section-about .right-col {
-  padding-top: 100px;
+#resume .left-col, #resume .right-col {
+  padding: 100px 0;
 }
-.content-section-about .left-col {
-  background-color: #f1eee9;
+#resume .left-col {
+  background-color: #fff9f7;
 }
-.content-section-about .left-col section {
+#resume .left-col section {
   padding-left: 30px;
   padding-right: 30px;
 }
-.content-section-about .left-col p {
+#resume .left-col p {
   font-style: italic;
 }
-.content-section-about .profile-section h1 {
+#resume .profile-section h1 {
   margin-bottom: 10px;
 }
-.content-section-about .profile-section .profile-picture {
+#resume .profile-section .profile-picture {
   width: 150px;
   height: 150px;
   margin-bottom: 35px;
 }
-.content-section-about .right-col section {
+#resume .right-col section {
   padding-left: 40px;
   padding-right: 40px;
 }
-.content-section-about .right-col h1 {
+#resume .right-col h1 {
   border-bottom: 1px solid #333;
   padding-bottom: 10px;
 }
-.content-section-about .right-col h2 {
+#resume .right-col h2 {
   margin-bottom: 10px;
 }
 
 .section-with-background {
   width: 100%;
-  padding: 50px 0;
+  padding: 100px 0;
   color: #fff;
-  background: #333 url(../images/quote.jpg) no-repeat scroll center center;
+  background: #333 url(../images/bg.jpg) no-repeat scroll center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -14645,32 +14634,16 @@ a:hover, a:focus {
 
 @media (min-width: 767px) {
   .content-section {
-    padding: 50px 0 100px 0;
+    padding: 100px 0;
   }
 
-  .content-section-resume {
-    padding: 0;
-  }
-
-  .content-section-pageheader {
-    padding-top: 100px;
-  }
-
-  #about {
-    padding: 0;
-  }
-
-  .content-section-about {
-    padding-top: 0px;
-  }
-
-  .portfolioweddings-section {
-    padding: 150px 0;
+  .content-section-no-padding {
+    padding: 0px;
   }
 
   #map {
     height: 400px;
-    margin-top: 250px;
+    margin-top: 100px;
   }
 }
 .btn {
@@ -14775,7 +14748,6 @@ img::-moz-selection {
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-  padding: 50px 0;
 }
 
 #gallery-portfoliolist-filters {
@@ -14959,7 +14931,7 @@ img::-moz-selection {
   display: block;
   float: left;
   padding: 7px;
-  width: 33%;
+  width: 50%;
   opacity: 0;
 }
 

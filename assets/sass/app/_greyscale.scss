@@ -226,20 +226,14 @@ a {
 }
 
 .content-section {
-    padding: 50px 0 100px 0;
+    padding: 50px 0;
 }
 
-.content-section-resume {
-    padding: 0;
+.content-section-no-padding {
+    padding: 0px;
 }
 
-.content-section-pageheader {
-    padding-top: 100px;
-}
-
-.content-section-about {
-    padding-top: 0px;
-
+#resume {
     h1 {
         font-size: 20px;
         text-transform: uppercase;
@@ -248,11 +242,6 @@ a {
     h2 {
         font-size: 16px;
         text-transform: uppercase;
-    }
-
-    section {
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
 
     article {
@@ -265,11 +254,11 @@ a {
     }
 
     .left-col, .right-col {
-        padding-top: 100px;
+        padding: 100px 0;
     }
 
     .left-col {
-        background-color: #f1eee9;
+        background-color: #fff9f7;
 
         section {
             padding-left: 30px;
@@ -310,31 +299,32 @@ a {
     }
 }
 
-.section-with-background  {
+.section-with-background {
     width: 100%;
-    padding: 50px 0;
+    padding: 100px 0;
     color: $grayscale-light;
-    background: $grayscale-dark url(../images/quote.jpg) no-repeat scroll center center;
+    background: $grayscale-dark url(../images/bg.jpg) no-repeat scroll center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
+
     h1, h2, a {
         color: $grayscale-light;
     }
 
     .btn-default {
-    @include button-variant($grayscale-light, transparentize(white, 1), $grayscale-light);
+        @include button-variant($grayscale-light, transparentize(white, 1), $grayscale-light);
 
-    &:hover,
-    &:focus {
-        border: 1px solid $grayscale-light;
-        outline: none;
-        color: $grayscale-dark;
-        background-color: $grayscale-light;
+        &:hover,
+        &:focus {
+            border: 1px solid $grayscale-light;
+            outline: none;
+            color: $grayscale-dark;
+            background-color: $grayscale-light;
+        }
     }
-}
 }
 
 #map {
@@ -345,32 +335,16 @@ a {
 
 @media (min-width: $screen-xs-max) {
     .content-section {
-        padding: 50px 0 100px 0;
+        padding: 100px 0;
     }
 
-    .content-section-resume {
-        padding: 0;
-    }
-
-    .content-section-pageheader {
-        padding-top: 100px;
-    }
-
-    #about {
-        padding: 0;
-    }
-
-    .content-section-about {
-        padding-top: 0px;
-    }
-
-    .portfolioweddings-section {
-        padding: 150px 0;
+    .content-section-no-padding {
+        padding: 0px;
     }
 
     #map {
         height: 400px;
-        margin-top: 250px;
+        margin-top: 100px;
     }
 }
 
@@ -423,6 +397,7 @@ footer {
     margin-top: 100px;
     padding: 50px 0;
     background-color: $grayscale-dark;
+
     p {
         margin: 0;
         color: $grayscale-light;
@@ -454,7 +429,6 @@ img {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
-    padding: 50px 0;
 }
 
 #gallery-portfoliolist-filters {
@@ -643,7 +617,7 @@ img {
     display: block;
     float: left;
     padding: 7px;
-    width: 33%;
+    width: 50%;
     opacity: 0;
 }
 
@@ -670,13 +644,22 @@ img {
 }
 
 @-webkit-keyframes moveUp {
-    0% { }
-    100% { -webkit-transform: translateY(0); opacity: 1; }
+    0% {}
+
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes moveUp {
-    0% { }
-    100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+    0% {}
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -690,6 +673,5 @@ img {
         width: 100%;
     }
 }
-
 
 /*lightbox*/

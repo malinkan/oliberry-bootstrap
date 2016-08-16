@@ -13,6 +13,8 @@
         <link rel="shortcut icon" href="/images/favicon.ico">
         <!-- Custom CSS -->
         <link href="/styles/main.css" rel="stylesheet">
+        <link href="/assets/plugins/colorbox-master/example2/colorbox.css" rel="stylesheet">
+        <link href="//rawgithub.com/ashleydw/lightbox/master/dist/ekko-lightbox.css" rel="stylesheet">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -48,16 +50,12 @@
             <!-- /.container -->
         </nav>
 
-
-
-        
-
-        <!-- Flower bouquet portfolio -->
-        <section id="portfolioflowers" class="container content-section content-section-pageheader text-center">
+        <!-- Portfolio -->
+        <section id="portfolioflowers" class="container content-section text-center">
             <div class="row">
                 
                 <div class="col-lg-8 col-lg-offset-2">
-                        <h1>Calligraphy</h1>
+                        <h1>Calligraphy Portfolio</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -67,15 +65,18 @@
                         
                     </div>
             </div>
-            <div class="row">
+           <div class="row">
                 <div class="col-lg-12">
                     <p><img src="/images/coming-soon.jpg"></p>
                 </div>
             </div>
         </section>
 
-<section id="contact" class="content-section text-center">
+
+        <!-- Contact Section -->
         <div class="section-with-background">
+        <section id="contact" class="content-section text-center">
+        
             <div class="container">
 
 
@@ -104,8 +105,9 @@
                                         </ul>
                                     </div>
                                 </div>
-                              </div></div>  
+                              </div>  
                             </section>
+                            </div>
     
                             
                             <!-- Footer -->
@@ -118,5 +120,28 @@
                             
                             <!-- Custom Theme JavaScript -->
                             <script src="/js/main.js"></script>
+
+                          
+           
+                            <!-- Masonry -->
+                            <script>
+                                new AnimOnScroll( document.getElementById( 'grid' ), {
+                                    minDuration : 0.4,
+                                    maxDuration : 0.7,
+                                    viewportFactor : 0.2
+                                } );
+
+                                
+                            </script>
+
+
+                            <script src="/assets/plugins/colorbox-master/jquery.colorbox.js"></script>
+                            <script>
+                               $(document).ready(function(){
+                                    $(".gallerygroup").colorbox({rel:'group2', transition:"fade", maxWidth: "80%"});
+                                    
+                                });
+                            </script>    
+
                         </body>
                     </html>
