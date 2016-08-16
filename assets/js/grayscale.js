@@ -52,7 +52,8 @@ $(function () {
         };
         
         filterListFlowers.init();
-        $('#gallery-portfoliolist-filters .bouquets').addClass('active');
+         $('#gallery-portfoliolist-filters .bouquets').addClass('active');
+        $('#portfoliolist .bouquets').show();
     }); 
 
 // Closes the Responsive Menu on Menu Item Click
