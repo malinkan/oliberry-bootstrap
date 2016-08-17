@@ -14786,7 +14786,7 @@ img::-moz-selection {
 .portfolio-wrapper {
   overflow: hidden;
   position: relative !important;
-  background: #666;
+  background: #1fa587;
   cursor: pointer;
 }
 
@@ -14815,6 +14815,7 @@ img::-moz-selection {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0.7;
 }
 
 .portfolio .label-text {
@@ -14845,7 +14846,7 @@ img::-moz-selection {
 }
 
 .portfolio:hover img {
-  top: -30px;
+  top: -40px;
 }
 
 /* #Tablet (Portrait) */
@@ -14927,7 +14928,7 @@ img::-moz-selection {
   padding: 0;
 }
 
-.grid li {
+.grid .grid-item {
   display: block;
   float: left;
   padding: 7px;
@@ -14935,14 +14936,14 @@ img::-moz-selection {
   opacity: 0;
 }
 
-.grid li.shown,
-.no-js .grid li,
-.no-cssanimations .grid li {
+.grid .grid-item.shown,
+.no-js .grid .grid-item,
+.no-cssanimations .grid .grid-item {
   opacity: 1;
 }
 
-.grid li a,
-.grid li img {
+.grid .grid-item a,
+.grid .grid-item img {
   outline: none;
   border: none;
   display: block;
@@ -14950,7 +14951,7 @@ img::-moz-selection {
 }
 
 /* Effect 2: Move Up */
-.grid.effect-2 li.animate {
+.grid.effect-2 .grid-item.animate {
   -webkit-transform: translateY(200px);
   transform: translateY(200px);
   -webkit-animation: moveUp 0.65s ease forwards;
@@ -14971,13 +14972,12 @@ img::-moz-selection {
   }
 }
 @media screen and (max-width: 900px) {
-  .grid li {
+  .grid .grid-item {
     width: 50%;
   }
 }
 @media screen and (max-width: 400px) {
-  .grid li {
+  .grid .grid-item {
     width: 100%;
   }
 }
-/*lightbox*/

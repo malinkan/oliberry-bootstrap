@@ -12271,7 +12271,7 @@ if ( typeof define === 'function' && define.amd ) {
 			viewportFactor : 0
 		},
 		_init : function() {
-			this.items = Array.prototype.slice.call( document.querySelectorAll( '#' + this.el.id + ' > li' ) );
+			this.items = Array.prototype.slice.call( document.querySelectorAll( '#' + this.el.id + ' > figure' ) );
 			this.itemsCount = this.items.length;
 			this.itemsRenderedCount = 0;
 			this.didScroll = false;
@@ -12282,7 +12282,7 @@ if ( typeof define === 'function' && define.amd ) {
 				
 				// initialize masonry
 				new Masonry( self.el, {
-					itemSelector: 'li',
+					itemSelector: 'figure',
 					transitionDuration : 0
 				} );
 				
