@@ -48,9 +48,9 @@ var paths = {
 /* Tasks */
 gulp.task('styles', function() {
     return sass('assets/sass/main.scss',{ style: 'expanded' })
-        //.pipe(gulp.dest('styles'))
-        //.pipe(rename({suffix: '.min'}))
-        //.pipe(minifycss())
+        .pipe(gulp.dest('styles'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(minifycss())
         .pipe(gulp.dest('styles'))
         .pipe(notify({ message: 'Styles task complete' }));
 });
