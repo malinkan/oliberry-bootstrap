@@ -14420,6 +14420,7 @@ a:hover, a:focus {
 }
 .navbar-custom a {
   color: #fff;
+  text-shadow: 1px 1px #adacac;
 }
 .navbar-custom .nav li.active {
   outline: none;
