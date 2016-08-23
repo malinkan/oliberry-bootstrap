@@ -14581,6 +14581,7 @@ a:hover, a:focus {
 #resume .right-col section {
   padding-left: 40px;
   padding-right: 40px;
+  margin-bottom: 20px;
 }
 #resume .right-col h1 {
   border-bottom: 1px solid #333;

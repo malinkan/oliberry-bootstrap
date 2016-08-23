@@ -12584,7 +12584,7 @@ $(document).ready(function() {
     
         
         $('.hidecontainer').each( function(i){
-            
+            console.log(i);
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
