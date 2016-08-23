@@ -14993,3 +14993,6 @@ img::-moz-selection {
     width: 100%;
   }
 }
+.hidecontainer {
+  opacity: 0;
+}
